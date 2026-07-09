@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SELGRA | Student chapter of the European Low Gravity Research Association</title>
+    <meta name="description" content="SELGRA connects students and early-career researchers interested in low gravity science and space life sciences.">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="Primary navigation">
+        <a class="brand" href="#home" aria-label="SELGRA home">
+          <span class="brand-mark">S</span>
+          <span>
+            <strong>SELGRA</strong>
+            <small>Student chapter of ELGRA</small>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <div class="nav-links" id="navLinks">
+          <a href="#home">Home</a>
+          <a href="#feed">Feed</a>
+          <a href="#about">About</a>
+          <a class="member-link" href="#dashboard" data-member-link>Dashboard</a>
+          <a class="member-link" href="#opportunities" data-member-link>Opportunities</a>
+          <button class="text-button" type="button" data-open-login>Member Area</button>
+          <button class="text-button exit-button" type="button" data-exit-member>Exit Member Area</button>
+        </div>
+      </nav>
+      <div class="mode-ribbon" data-mode-ribbon hidden>
+        <span>Member Area</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home" aria-labelledby="heroTitle">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Space life sciences network</p>
+          <h1 id="heroTitle">SELGRA</h1>
+          <p class="subtitle">Student chapter of the European Low Gravity Research Association</p>
+          <p class="hero-copy">SELGRA connects students and early-career researchers interested in low gravity science, microgravity, hypergravity, space life sciences, engineering and professional development.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#feed">Explore activities</a>
+            <button class="button secondary" type="button" data-open-login>Enter Member Area</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="feed" aria-labelledby="feedTitle">
+        <div class="section-heading">
+          <p class="eyebrow">Public updates</p>
+          <h2 id="feedTitle">Feed / News</h2>
+          <p>Selected SELGRA-related LinkedIn activity.</p>
+        </div>
+        <div class="feed-grid" id="feedGrid" aria-live="polite"></div>
+        <div class="linkedin-panel" aria-labelledby="linkedinTitle">
+          <div class="inline-heading">
+            <p class="eyebrow">From LinkedIn</p>
+            <h3 id="linkedinTitle">SELGRA in the gravity research network</h3>
+          </div>
+          <div class="linkedin-grid">
+            <article class="linkedin-embed">
+              <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7447673428372938753" title="LinkedIn post about SELGRA and SSEA Munich 2026" loading="lazy" allowfullscreen></iframe>
+              <a class="embed-fallback" href="https://www.linkedin.com/posts/jakob-mali_ssea-munich-2026-5th-symposium-on-space-activity-7447673428372938753-Y8NN" target="_blank" rel="noreferrer">Open LinkedIn post</a>
+            </article>
+            <article class="linkedin-embed">
+              <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7238921049453510656" title="LinkedIn post mentioning SELGRA leadership" loading="lazy" allowfullscreen></iframe>
+              <a class="embed-fallback" href="https://www.linkedin.com/posts/elgra-space_new-management-committee-alert-last-activity-7238921049453510656-PS_f" target="_blank" rel="noreferrer">Open LinkedIn post</a>
+            </article>
+            <article class="linkedin-embed">
+              <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7208403164759240705" title="LinkedIn post mentioning SELGRA members" loading="lazy" allowfullscreen></iframe>
+              <a class="embed-fallback" href="https://www.linkedin.com/posts/jakob-mali_it-is-alway-a-great-pleasure-to-be-back-in-activity-7208403164759240705-J_Rp" target="_blank" rel="noreferrer">Open LinkedIn post</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about" aria-labelledby="aboutTitle">
+        <div class="section-heading">
+          <p class="eyebrow">Association profile</p>
+          <h2 id="aboutTitle">About SELGRA</h2>
+        </div>
+        <div class="about-grid">
+          <article>
+            <h3>Mission</h3>
+            <p>SELGRA supports students and early-career researchers who want to learn, collaborate and grow within the European low gravity research community.</p>
+          </article>
+          <article>
+            <h3>What we do</h3>
+            <p>We host educational formats, research discussions and professional development activities for the low gravity research community.</p>
+          </article>
+          <article>
+            <h3>Who it is for</h3>
+            <p>Researchers, educators, clinicians, engineers, designers, data scientists and students who want to work across space, health and education.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="member-zone" data-member-zone hidden>
+        <section class="section dashboard-section" id="dashboard" aria-labelledby="dashboardTitle">
+          <div class="section-heading">
+            <p class="eyebrow">Member area</p>
+            <h2 id="dashboardTitle">Member Dashboard</h2>
+            <p>Track current open calls and saved items in one place.</p>
+          </div>
+          <div class="stats-grid" id="statsGrid"></div>
+          <div class="recommend-panel">
+            <h3>Saved items</h3>
+            <div class="saved-list" id="savedItemsList"></div>
+          </div>
+        </section>
+
+        <section class="section alt" id="opportunities" aria-labelledby="opportunitiesTitle">
+          <div class="section-heading">
+            <p class="eyebrow">Open calls</p>
+            <h2 id="opportunitiesTitle">Opportunities (Open Calls)</h2>
+            <p>Filter selected real calls for workshops and training routes relevant to SELGRA members.</p>
+          </div>
+          <div class="filter-bar">
+            <input id="opportunitySearch" type="search" placeholder="Search title or description" aria-label="Search opportunities">
+          </div>
+          <div class="cards-grid" id="opportunitiesGrid" aria-live="polite"></div>
+        </section>
+      </section>
+    </main>
+
+    <div class="modal-backdrop" id="loginModal" role="dialog" aria-modal="true" aria-labelledby="loginTitle" hidden>
+      <div class="modal">
+        <button class="modal-close" type="button" data-close-modal aria-label="Close">×</button>
+        <p class="eyebrow">Member access</p>
+        <h2 id="loginTitle">Enter Member Area</h2>
+        <p>Enter the member access password.</p>
+        <form id="loginForm">
+          <label for="passwordInput">Password</label>
+          <input id="passwordInput" type="password" autocomplete="off">
+          <p class="form-error" id="loginError" role="alert"></p>
+          <button class="button primary" type="submit">Enter Member Area</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal-backdrop" id="detailModal" role="dialog" aria-modal="true" aria-labelledby="detailTitle" hidden>
+      <div class="modal detail-modal">
+        <button class="modal-close" type="button" data-close-detail aria-label="Close">×</button>
+        <div id="detailContent"></div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <p>SELGRA | Student chapter of the European Low Gravity Research Association</p>
+    </footer>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
