@@ -1,4 +1,4 @@
-const MEMBER_PASSWORD = "selgra-demo";
+const MEMBER_PASSWORD = "selgra-zerog";
 const STORAGE_KEY = "selgraMemberMode";
 const SAVED_KEY = "selgraSavedItems";
 
