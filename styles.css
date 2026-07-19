@@ -74,14 +74,10 @@ select {
 }
 
 .brand-mark {
-  display: grid;
-  width: 42px;
+  display: block;
+  width: auto;
   height: 42px;
-  place-items: center;
-  border-radius: 8px;
-  background: linear-gradient(135deg, var(--accent), #082a5c);
-  color: #fff;
-  font-weight: 800;
+  object-fit: contain;
 }
 
 .brand strong,
@@ -192,6 +188,12 @@ h1 {
   font-size: clamp(4rem, 12vw, 9.5rem);
   line-height: 0.9;
   letter-spacing: 0;
+}
+
+.hero-logo {
+  display: block;
+  width: clamp(280px, 46vw, 760px);
+  height: auto;
 }
 
 h2 {
@@ -882,7 +884,6 @@ body.member-mode .site-header {
   background: rgba(6, 16, 27, 0.88);
 }
 
-body.member-mode .brand-mark,
 body.member-mode .button.primary {
   background: linear-gradient(135deg, #149bd4, #36f2d3);
   color: #04111a;
