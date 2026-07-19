@@ -935,6 +935,20 @@ form input {
   text-align: center;
 }
 
+.footer-links {
+  margin: 8px 0 0;
+}
+
+.footer-links a {
+  color: var(--muted);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
 body.member-mode {
   --bg: #06101b;
   --surface: #0c1b2a;
